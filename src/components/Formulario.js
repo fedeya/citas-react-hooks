@@ -19,6 +19,9 @@ function Formulario({ crearCita }) {
 
   const sendCita = e => {
     e.preventDefault();
+    if(Object.values(cita).includes("")){
+      return;
+    }
     crearCita(cita);
     e.target.reset();
   }

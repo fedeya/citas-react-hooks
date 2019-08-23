@@ -21,7 +21,7 @@ function App() {
   }, [citas]);
 
   const crearCita = cita => {
-    
+
     const newCitas = [...citas, cita];
 
     setCitas(newCitas);
